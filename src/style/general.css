@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.next {
+    background-color: hsl(213, 96%, 18%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 30px;
+    right: calc(8.5% + 30px);
+    cursor: pointer;
+    border: 0;
+}
+
+.back {
+    color: hsl(231, 11%, 63%);
+    background-color: hsl(0, 0%, 100%);
+    border: 0;
+    position: absolute;
+    bottom: 30px;
+    left: calc(8.5% + 30px);
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.next:hover,.next:active {
+    background-color: hsl(213, 96%, 30%);
+}
+
+
+.back:hover,.back:active {
+    color: hsl(213, 96%, 18%);
+}
+
+@media (hover: none) {
+  *{
+      -webkit-tap-highlight-color: transparent;
+  }
+}
+
+
+@media (max-width: 920px) {
+
+    .back, .next {
+        bottom: 6%;
+        transform: translateY(50%);
+    }
+
+
+    .back {
+        left: 5%;
+    }
+
+    .next {
+        right: 5%;
+    }
+
+}

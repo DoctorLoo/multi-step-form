@@ -1,0 +1,84 @@
+.PlanStep3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid hsl(231, 11%, 83%);
+    border-radius: 5px;
+    margin-block: 20px;
+    height: 80px;
+    padding: 20px;
+
+}
+
+.PlanStep3 *:last-child {
+    margin-left: auto;
+}
+
+.PlanStep3:has(input[type="checkbox"]:checked) {
+    background-color: hsla(243, 100%, 62%, 0.04);
+    border: 1px solid hsl(243, 100%, 62%);
+}
+
+.PlanStep3 input[type="checkbox"] {
+    accent-color: hsl(243, 100%, 62%);
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
+.PlanStep3 .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.PlanStep3 h3 {
+    color: hsl(213, 96%, 25%);
+}
+
+.PlanStep3 .cost {
+    color: hsl(243, 100%, 62%);
+}
+
+@media (max-width: 920px) {
+
+    .PlanStep3 input[type="checkbox"] {
+        margin-right: 9px;
+    }
+
+
+    .PlanStep3 {
+        height: fit-content;
+        padding: 15px 9px;
+    }
+
+
+    .PlanStep3 h3 {
+        font-size: 16px;
+    }
+
+    .PlanStep3 .details {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 470px) {
+
+    .PlanStep3 {
+        line-height: 1.5;
+    }
+
+    .PlanStep3 h3 {
+        font-size: 13px;
+    }
+
+
+    .PlanStep3 .cost {
+        font-size: 14px;
+    }
+
+
+}

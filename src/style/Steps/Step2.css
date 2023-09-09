@@ -1,0 +1,65 @@
+.Step2 {
+    margin-inline: auto;
+    width: 83%;
+    padding: 30px;
+    position: relative;
+    height: 100%;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+
+.Step2 p {
+    font-size: 16px;
+    color: hsl(231, 11%, 63%);
+}
+
+.Step2 h1 {
+    letter-spacing: 1px;
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 8px;
+}
+
+.Step2 .plans {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+@media (max-width: 920px) {
+
+    .Step2 {
+        background-color: hsl(0, 0%, 100%);
+        width: 90%;
+        height: fit-content;
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -90px);
+        box-shadow: 0 15px 20px -5px hsl(229, 24%, 87%);
+
+    }
+
+    .Step2:active,.Step2:focus,.Step2:focus-within{
+
+    }
+
+    .Step2 > h1 {
+        font-size: 1.7rem;
+    }
+
+    .Step2 > p {
+        font-size: 15px;
+    }
+
+    .Step2 .plans {
+        margin-block: 15px;
+    }
+
+    .Step2 .plans {
+        flex-direction: column;
+    }
+
+}

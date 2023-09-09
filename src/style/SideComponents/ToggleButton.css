@@ -1,0 +1,29 @@
+.ToggleButton {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color:  hsl(229, 24%, 95%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 500ms;
+}
+
+.Monthly,.Yearly {
+    margin-inline: 10px;
+    font-weight: 700;
+}
+
+@media (max-width: 920px) {
+
+    .ToggleButton {
+        position: absolute;
+        bottom: 15px;
+        margin-block: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 60px);
+    }
+
+}

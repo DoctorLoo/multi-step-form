@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "icon": "icon-arcade.svg",
+    "title": "Arcade",
+    "price": "$90/yr",
+    "bonus": "2 months free"
+  },
+  {
+    "id": 2,
+    "icon": "icon-advanced.svg",
+    "title": "Advanced",
+    "price": "$120/yr",
+    "bonus": "2 months free"
+  },
+  {
+    "id": 3,
+    "icon": "icon-pro.svg",
+    "title": "Pro",
+    "price": "$150/yr",
+    "bonus": "2 months free"
+  }
+]
